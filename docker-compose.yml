@@ -1,6 +1,6 @@
 services:
   portfolio:
-    image: portfolio
+    image: hamza-rihani-portfolio
     build: 
       context: .
       dockerfile: Dockerfile
@@ -11,6 +11,6 @@ services:
       retries: 3
       start_period: 10s
     volumes:
-     - ./portfolio:/usr/local/app
+     - ./hamza-rihani-portfolio:/usr/local/app
     ports:
       - "3000:3000"
